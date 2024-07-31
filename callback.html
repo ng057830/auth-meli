@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Callback</title>
+</head>
+<body>
+  <h1>Autenticación completada</h1>
+  <p>Redirigiendo...</p>
+  <script>
+    // Código JavaScript para manejar el código de autorización
+    // Ejemplo: https://example.com/callback?code=AUTH_CODE
+    const params = new URLSearchParams(window.location.search);
+    const authCode = params.get('code');
+    
+    // Aquí podrías hacer una solicitud para intercambiar el código por un token de acceso
+    // y luego redirigir o mostrar un mensaje de éxito.
+    
+    console.log('Authorization Code:', authCode);
+    // Redirigir o hacer otra acción según tus necesidades
+  </script>
+</body>
+</html>
